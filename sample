@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #74b9ff, #a29bfe); /* Blended gradient */
+      color: #2d3436;
+      line-height: 1.6;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: rgba(1, 10, 2, 0.932) !important; /* Transparent overlay */
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(8px);
+    }
+
+    header h1 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e05d05;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background: url('back1.jpg'); /* Overlay on gradient */
+      background-size:cover;
+      padding: 20px;
+      text-shadow: #2d3436 !important ;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      color: #ff6207;
+    }
+
+    .hero a {
+      background-color: #6c5ce7;
+      padding: 15px 40px;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: background-color 0.3s;
+    }
+
+    .hero a:hover {
+      background-color: #a29bfe;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+       background: url('cover.png');
+       background-size:cover;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #6c5ce7;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    p {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+
+    /* Skills Section */
+    .skills {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skill {
+      width: 30%;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .skill h3 {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+      color: #00201c;
+    }
+
+
+    ul li {
+      background-color: #f4f4f4;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 80%;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    .contact-form button {
+      background-color: #6c5ce7;
+      color: white;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #a29bfe;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2d3436;
+      color: white;
+      margin-top: 30px;
+    }
+
+    footer a {
+       color: #ff6207;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .skill {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+     <h1><img src="BPO_logo.png"></h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <div class="hero">
+<center><img src="profile.jpg" width = 210 height =160 hspace = 300 style="border-radius: 10%;border:3px solid #ffff;"></center>
+    <h1>Hello, I'm Ronnie F. Toribio</h1>
+    <p>I Love coding, and to share!</p>
+  </div>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a future web developer passionate about blending design with technology to create seamless user experiences.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>Programing Language</h3>
+          <p>Java, C++</p>
+        </div>
+        <div class="skill">
+          <h3>Web Dev.</h3>
+          <p>Html, Css,Java Script</p>
+        </div>
+        <div class="skill">
+          <h3>Grapic Design</h3>
+          <p>Adobe Photoshop, Illustrator, In Design</p>
+        </div>
+      </div>
+    </section>
+
+<section id="certificates">
+      <h2>Certificates</h2>
+      <form class="certificates-form">
+        <center><img src="Certificate.jpg" width = 700 height =500 hspace = 300"></center>
+        <center><img src="Skilllogic.jpg" width = 700 height =500 hspace = 300"></center>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+
+  </div>
+
+  <footer>
+ <a href="#">Back to Top</a></p>
+  </footer>
